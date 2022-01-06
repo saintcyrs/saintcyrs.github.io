@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	{% block head %}
 		<title>Soleil Saint-Cyr</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	{% endblock %}
 	</head>
 	<body>
 		<nav>
+		{% block nav %}
     		<ul>
         		<li><a href="/">Home</a></li>
 	        	<li><a href="/about">About</a></li>
         		<li><a href="/resume">Resume</a></li>
         		<li><a href="/portfolio">Portfolio</a></li>
     		</ul>
+		{% endblock %}
 		</nav>
 		<div class="container">
     		<div class="blurb">
@@ -21,11 +25,13 @@
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 		<footer>
+		{% block footer %}
     		<ul>
         		<li><a href="mailto:ssaintcyr@college.harvard.edu">email</a></li>
         		<li><a href="https://github.com/saintcyrs">github.com/saintcyrs</a></li>
                 	<li><a href="https://linkedin.com/in/saintcyrs">linkedin.com/saintcyrs</a></li>
 		</ul>
+		{% endblock %}
 		</footer>
 	</body>
 </html>
