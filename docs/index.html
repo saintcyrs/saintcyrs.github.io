@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	{% block head %}
-		<title>Soleil Saint-Cyr</title>
+		{% block head %}
+		<title>{% block title %}{% endblock %} Soleil Saint-Cyr</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	{% endblock %}
+		{% endblock %}
 	</head>
 	<body>
 		<nav>
