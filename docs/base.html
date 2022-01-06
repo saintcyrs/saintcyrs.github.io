@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="style.css" />
+    <title>{% block title %}{% endblock %}Soleil Saint-Cyr</title>
+    {% endblock %}
+</head>
+<body>
+    <div id="nav bar">
+      {% block nav %}
+      <nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+	        	<li><a href="/about">About</a></li>
+        		<li><a href="/resume">Resume</a></li>
+        		<li><a href="/portfolio">Portfolio</a></li>
+    		</ul>
+     
+      </nav>
+      {% endblock %}
+    </div>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+      {% block footer %}
+      <footer>
+        <ul>
+          <li><a href="mailto:ssaintcyr@college.harvard.edu">email</a></li>
+        	<li><a href="https://github.com/saintcyrs">github.com/saintcyrs</a></li>
+          <li><a href="https://linkedin.com/in/saintcyrs">linkedin.com/saintcyrs</a></li>
+		    </ul>
+      </footer>
+      {% endblock %}
+    </div>
+</body>
+</html>
