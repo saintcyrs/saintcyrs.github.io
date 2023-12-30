@@ -1,0 +1,23 @@
+body {
+  background-color: #deddd6;
+  font-family: Roboto, sans-serif;
+  color: #19409b;
+}
+
+#header {
+  padding-top: 50px;
+}
+
+a {
+  color: #19409b;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#links {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
